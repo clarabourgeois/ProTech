@@ -10,20 +10,31 @@ body {
   color: #5D675C; }
 
 header {
-  background-color: #5D675C;
-  /* Couleur sombre pour l'en-tête */
-  color: white;
+  background-color: white;
+  color: #5D675C;
   padding: 20px;
   text-align: center; }
-
-header h1 {
-  font-family: 'NT Wagner Bold', sans-serif;
-  margin: 0; }
+  header .header-content {
+    display: flex;
+    /* Aligne les éléments en ligne */
+    align-items: center;
+    /* Centre verticalement l'image et le texte */
+    justify-content: center;
+    /* Centre horizontalement le contenu dans le header */
+    gap: 15px;
+    /* Ajoute un espace entre l'image et le texte */ }
+  header .header-logo {
+    width: 100px;
+    /* Réduit la taille de l'image */
+    height: auto;
+    /* Garde les proportions de l'image */ }
+  header h1 {
+    font-family: 'NT Wagner Bold', sans-serif;
+    margin: 0; }
 
 nav {
   text-align: center;
   background-color: #8B9789;
-  /* Couleur intermédiaire pour le menu */
   padding: 10px; }
 
 nav a {
