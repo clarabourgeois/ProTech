@@ -150,7 +150,7 @@ footer {
   /* Grille pour les services */
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4 éléments par ligne */
+    grid-template-columns: repeat(3, 1fr);  /* 3 éléments par ligne */
     gap: 20px;
     margin-top: 30px;
   }
@@ -166,16 +166,109 @@ footer {
 
   .service-item img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Garde les proportions et remplit le cadre */
     border-radius: 8px;
     margin-bottom: 10px;
   }
+
 
   .service-item p {
     font-size: 16px;
     color: #5D675C; /* Couleur du texte */
     font-family: 'Roboto', sans-serif;
   }
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablettes */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* 1 colonne sur petits écrans */
+    }
+  }
+  .contact-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #F1CCBC; /* Couleur douce */
+    border-radius: 10px;
+  }
+
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #5D675C;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5D675C;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .contact-form button {
+    background-color: #5D675C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .contact-form button:hover {
+    background-color: #8B9789;
+  }
+  .about-contact {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .about-contact p {
+    font-size: 18px;
+    color: #5D675C;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    display: inline-block; /* Pour que le lien ressemble à un bouton */
+    padding: 15px 30px;
+    background-color: #F1CCBC;
+    color: #5D675C;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #E4B2A5; /* Couleur légèrement plus foncée au survol */
+  }
+
 
 
 

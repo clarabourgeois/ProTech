@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="outputs/outputs.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Contact - Hélène Pangot</title>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <img src="images/logo2.jpg" alt="logo de Hélène Pangot" class="header-logo" />
+    <h1>Contactez-moi</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="about.html">À propos</a>
+  <a href="domaines.html">Domaines d'application</a>
+  <a href="services.html">Prestations</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <section class="section contact-section">
+    <h2>Coordonnées</h2>
+    <p>Vous avez une question ou souhaitez prendre rendez-vous ? Voici comment me contacter :</p>
+
+    <div class="contact-details">
+      <h3>Informations</h3>
+      <ul>
+        <li><strong>Nom :</strong> Hélène Pangot</li>
+        <li><strong>Téléphone :</strong> <a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+        <li><strong>Email :</strong> <a href="mailto:helene.pangot@example.com">helene.pangot@example.com</a></li>
+        <li><strong>Adresse :</strong> Saint-Just-Saint-Rambert (42170) </li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Envoyez-moi un message</h3>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+        <button type="submit" class="cta-button">Envoyer</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Hélène Pangot - Tous droits réservés</p>
+</footer>
+</body>
+</html>
