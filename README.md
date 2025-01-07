@@ -10,7 +10,7 @@ Ruby (to enable SCSS compilation with sass), Python 3 and pip3 (for server-side 
 ## Clone the project #
 To clone this project and be able to use it on your computer, you need to run the followings command : 
 ```
-git clone https://github.com/clarabourgeois/ProTech
+git clone https://github.com/clarabourgeois/ProTech.git
 ```
 
 ## Getting the webpage running #
