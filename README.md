@@ -20,5 +20,32 @@ git clone https://github.com/clarabourgeois/ProTech.git
 - Run the `./compile_css.sh` script to transform the SCSS source into CSS
 - Access your webpage with the URLs http://localhost:8000/pages/about.html
 
+  ## Project Structure #
+```bash  
+  ProTech/  
+├── .idea/  
+├── outils/  
+├── Site/  
+│   ├── .sass-cache/  
+│   ├── pages/  
+│   │   ├── images/                   # Folder for images  
+│   │   └── outputs/                  # Folder for CSS output  
+│   │       └── outputs.css           # Compiled CSS file  
+│   ├── about.html                    # "About" HTML page  
+│   ├── contact.html                  # "Contact" HTML page  
+│   ├── domaines.html                 # "Domains" HTML page  
+│   ├── nutrition.html                # "Nutrition" HTML page  
+│   ├── services.html                 # "Services" HTML page  
+│   └── style.scss                    # SCSS stylesheet file  
+│  
+├── compile_css.sh                    # Shell script to compile CSS  
+├── run_server.py                     # Python script to run the server  
+├── src/                               # Source folder  
+├── .gitignore                         # Git configuration file  
+├── LICENSE                            # Project license file  
+├── README.md                          # Project documentation file  
+└── SiteInternet.iml                   # IntelliJ project file  
+```
+
 ## License #
 This project use the MIT License. It is in the file "LICENSE". 
