@@ -66,11 +66,10 @@ p {
   list-style-type: none; }
 
 footer {
-  background-color: #5D675C;
-  color: white;
+  background-color: #F1CCBC;
+  color: #5D675C;
   text-align: center;
   padding: 10px;
-  position: fixed;
   width: 100%;
   bottom: 0; }
 
@@ -192,6 +191,30 @@ footer {
   color: #5D675C;
   /* Couleur du texte */
   font-family: 'Roboto', sans-serif; }
+
+.service-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5D675C;
+  margin-bottom: 10px; }
+
+/* Type de séance */
+.service-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5D675C;
+  margin-bottom: 10px; }
+
+/* Format (individuel ou groupe) */
+.service-format {
+  font-size: 16px;
+  color: #8B9789;
+  margin-bottom: 5px; }
+
+/* Durée de la séance */
+.service-duration {
+  font-size: 16px;
+  color: #8B9789; }
 
 @media (max-width: 768px) {
   .services-grid {
